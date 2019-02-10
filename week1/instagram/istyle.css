@@ -1,0 +1,109 @@
+.*{
+	margin: 0;
+	padding: 0;
+}
+.photo2{
+	padding-top: 70px;
+	height: 650px;
+	float: left;
+	margin: 10px;
+
+}
+body{
+	background-color: #fafafa! important;
+}
+.authf{
+	margin-top: 20px;
+}
+.logo{
+	margin: 15px auto;
+	width: 200px;
+	height: 71px;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+.right{
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	width: 350px;
+	margin: 10px;
+	padding: 40px;
+	float: right;
+	margin-right: 560px;
+	margin-top: 12px;
+	width: 100%;
+	max-width: 350px;
+}
+.sign-up-txt{
+	font-weight: 600px;
+	line-height: 20px;
+	font-size: 17px;
+	color: #999;
+	text-align: center;
+}
+button img{
+	height: 18px !important;
+	padding: 0 8px 2px;
+}
+.ili-txt{
+	font-size: 13px !important;
+	color: #999;
+	font-weight: 600;
+	text-align: center;
+}
+.line1{
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 2px;
+	width: 110px;
+	position: relative;
+	top: 11px;
+}
+.line2{
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 2px;
+	width: 110px;
+	position: relative;
+	bottom: 8px;
+	left: 160px;
+}
+.form-group{
+	margin-bottom: 6px !important;
+}
+.form-control{
+	background: #fafafa !important;
+	border: 1px solid #efefef;
+	font-size: 12px !important;
+}
+::placeholder{
+	color: #999 !important;
+}
+.btn{
+	margin: 12px auto;
+	padding: 2px!important;
+	font-weight: 600!important;
+}
+.btn-primary{
+	background-color: #3897f0;
+	border: 1px solid #3897f0!important;
+}
+.politika{
+	line-height: 18px;
+	font-size: 14px;
+	color: #999;
+	margin: 5px 20px; 
+	text-align: center;
+}
+.est-acc{
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	width: 350px;
+	margin: 10px;
+	padding: 20px;
+}
+.install-links{
+	height: 40px;
+}

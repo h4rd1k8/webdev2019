@@ -1,0 +1,36 @@
+.viewer{
+  background: #CCC;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.taskLists{
+  width: 40%;
+}
+.taskList{
+  font-size: 24px;
+  width: 100%;
+  min-height: 100px;
+  background: #a2dc4d;
+  color: #FFF;
+  margin: 10px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 20px;
+}
+.tasksContainer{
+  width: 40%;
+}
+.tasks{
+  font-size: 16px;
+  width: 80%;
+  min-height: 100px;
+  background: crimson;
+  color: #FFF;
+  margin: 10px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}

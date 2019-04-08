@@ -1,0 +1,14 @@
+<div class = "viewer">
+  <div class="taskLists">
+    <div *ngFor="let t of taskLists" (click) = "getTaskOfTaskList(t)" class = "taskList">{{t.id}} : {{t.name}}</div>
+  </div>
+  <div class="tasksContainer">
+      <div *ngFor = "let t of tasks" class = "tasks">
+        <div><span> ID:</span> {{t.id}}</div>
+        <div><span> Name: </span> {{t.name}}</div>
+        <div><span> Status: </span> {{t.status}}</div>
+        <div><span> Created_at: </span> {{t.created_at}}</div>
+        <div><span> Due_on: </span> {{t.due_on}}</div>
+      </div>
+  </div>
+</div>

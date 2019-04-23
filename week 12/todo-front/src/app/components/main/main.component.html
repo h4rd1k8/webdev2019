@@ -1,0 +1,49 @@
+<div class="taskLists">
+  <div class="content">
+    <div class="inTaskLists">
+      <div *ngFor="let t of taskLists" (click) = "getTaskOfTaskList(t)" class = "taskList">
+        <div class="data">
+          <input type="text" [(ngModel)]="t.name">
+        </div>
+        <span (click) = "updateTaskList(t)">CHANGE</span>
+        <span (click) = "deleteTaskList(t)">DELETE</span>
+        <span (click) = "getTaskOfTaskList(t)">SHOW</span>
+      </div>
+      <div class="create">
+        <input type="text" class = "createInput" id = "createInput" placeholder="New Task List Name... No more than 200" [(ngModel)]="name">
+        <button class="createBtn" (click) = "createTaskList()">CREATE</button>
+      </div>
+    </div>
+
+    <div class="inTasks">
+        <div class="inTasks__container">
+          <div *ngFor = "let t of tasks" class = "tasks">
+            <div class="taskInfo">
+              <div><span> Name: </span> <input type="text" [(ngModel)]="t.name"></div>
+              <div><span>TaskList: {{t.task_list.name}}</span></div>
+              <div><span> Status: </span> <input type="text" [(ngModel)]="t.status"></div>
+              <div><span> Created_at: </span> {{t.created_at}}</div>
+              <div><span> Due_on: </span> {{t.due_on}}</div>
+            </div>
+            <div class="bttns">
+              <span (click) = "updateTask(t)">CHANGE</span>
+              <span (click) = "deleteTask(t)">DELETE</span>
+            </div>
+          </div>
+        </div>
+      <div class="inTasks__create">
+        <input type="text" class = "createInput" placeholder="New Task Name... No more than 200" [(ngModel)]="taskName">
+        <input type="text" class = "createInput" placeholder="New Task Status... No more than 200" [(ngModel)]="taskStatus">
+        <div>
+        <div *ngFor="let t of taskLists" class = "ids">
+          <span> {{t.id}} </span>
+        </div>
+        <div>
+        <input type="text" class = "createInput" placeholder="Pick TaskList IDs above" [(ngModel)]="taskListID">
+        <button class="createBtn" (click) = "createTask()">CREATE</button>
+      </div>
+      </div>
+  </div>
+
+</div>
+
